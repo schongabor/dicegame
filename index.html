@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dicee</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+
+
+  </head>
+  <body>
+    <div class="form-group text-center input" id="input">
+
+      <div class="alert alert-warning" role="alert">
+        Add meg az első játékos nevét!
+      </div>
+      <input type="text" class="form-control input-field" placeholder="Első játékos neve" id="play1">
+
+      <div class="alert alert-warning" role="alert">
+        Add meg a második játékos nevét!
+      </div>
+      <input type="text" class="form-control input-field" placeholder="Második játékos neve" id="play2">
+
+      <input type="submit" class="btn btn-outline-secondary" id="submit" onclick="submitForm()">
+
+    </div>
+
+    <div class="container" id="cont" hidden>
+      <h1>Frissíts</h1>
+
+      <div class="dice">
+        <p id="player1">Játékos 1</p>
+        <img class="img" src="images/dice6.png">
+      </div>
+
+      <div class="dice">
+        <p id="player2">Játékos 2</p>
+        <img class="img" src="images/dice6.png">
+      </div>
+
+      <input type="submit" value="Újra" class="btn btn-lg btn-outline-secondary" id="reRoll" onclick="randomDices()">
+
+    </div>
+
+    <script src="index.js"></script>
+    
+  </body>
+
+  <footer>
+    www . b ' n ' b . com
+  </footer>
+</html>
